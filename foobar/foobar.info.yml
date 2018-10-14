@@ -1,0 +1,5 @@
+name: 'Foobar'
+type: module
+description: 'Creating the custom content type.'
+core: 8.x
+package: 'Custom'
