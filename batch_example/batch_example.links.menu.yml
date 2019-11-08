@@ -1,0 +1,7 @@
+batch_example:
+  title: 'Batch Example'
+  description: 'Batch Example'
+  parent: main
+  menu_name: main
+  route_name: batch_example.delete_node_example
+  weight: 9
