@@ -1,0 +1,5 @@
+name: Batch Process
+description : "Batch Process in Drupal8"
+type: module
+core: 8.x
+package: Custom
