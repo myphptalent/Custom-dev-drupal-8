@@ -1,0 +1,5 @@
+name: 'Drupalup Service'
+description : 'The test services by custom module'
+type: 'module'
+core: '8.x'
+package: 'custom'
