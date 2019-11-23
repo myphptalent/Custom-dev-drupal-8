@@ -1,0 +1,8 @@
+
+tour_sample.show_sample_controller_ShowSample:
+  path: '/tour_sample/ShowSample'
+  defaults:
+    _controller: '\Drupal\tour_sample\Controller\ShowSampleController::ShowSample'
+    _title: 'ShowSample'
+  requirements:
+    _permission: 'access content'

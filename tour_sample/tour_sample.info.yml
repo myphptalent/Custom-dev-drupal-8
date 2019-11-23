@@ -1,0 +1,9 @@
+name: 'Tour Sample'
+type: module
+description: 'The sample example for tour functionaliy.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - tour
+  - toolbar
+  - examples

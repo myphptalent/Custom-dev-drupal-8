@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains tour_sample.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function tour_sample_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the tour_sample module.
+    case 'help.page.tour_sample':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The sample example for tour functionaliy.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function tour_sample_theme() {
+  return [
+    'tour_sample' => [
+      'variables' => ['samples' => NULL],
+    ],
+  ];
+}
