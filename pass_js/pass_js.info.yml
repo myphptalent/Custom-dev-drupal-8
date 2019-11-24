@@ -1,0 +1,5 @@
+name: 'Pass Js'
+type: module
+description: 'Pass js vaiable from controller.'
+core: 8.x
+package: 'Custom'

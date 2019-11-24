@@ -3,3 +3,4 @@ Custom development Drupal 8
 drupalup_service
 batch_example
 tour_sample
+pass_js

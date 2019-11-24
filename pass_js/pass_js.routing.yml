@@ -1,0 +1,8 @@
+
+pass_js.show_js_controller_ShowJs:
+  path: 'pass_js/show_js'
+  defaults:
+    _controller: '\Drupal\pass_js\Controller\ShowJsController::ShowJs'
+    _title: 'ShowJs'
+  requirements:
+    _permission: 'access content'

@@ -1,0 +1,7 @@
+pass_js_show:
+  js:
+    js/js_show.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupalSettings
