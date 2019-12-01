@@ -1,0 +1,5 @@
+name: 'Custom multi Step Form'
+type: module
+description: 'Multi step form.'
+core: 8.x
+package: 'Custom'

@@ -6,3 +6,4 @@ tour_sample
 pass_js
 custom_drush_command
 demo_search
+multi_step_form

@@ -1,0 +1,4 @@
+multi_step_form.multi:
+  title: 'Multi Step Form'
+  'route_name': multi_step_form.default_form
+  'menu_name': main
