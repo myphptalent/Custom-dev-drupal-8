@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains demo_search.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function demo_search_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the demo_search module.
+    case 'help.page.demo_search':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Search user using autocomplete.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function demo_search_theme() {
+  return [
+    'demo_search' => [
+      'render element' => 'children',
+    ],
+  ];
+}

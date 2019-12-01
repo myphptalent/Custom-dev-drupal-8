@@ -1,0 +1,22 @@
+
+demo_search.user_controller_SearchUser:
+  path: '/demo_search/SearchUser'
+  defaults:
+    _controller: '\Drupal\demo_search\Controller\UserController::DisplayUser'
+    _title: 'Display user name'
+  requirements:
+    _permission: 'access content'
+demo_search.user_controller_SearchByUser:
+  path: '/demo_search/SearchByUser'
+  defaults:
+    _controller: '\Drupal\demo_search\Controller\UserController::SearchByUser'
+    _format: 'json'
+  requirements:
+    _permission: 'access content'    
+demo_search.demo_search_form:
+  path: '/demo_search/form/demo_search'
+  defaults:
+    _form: '\Drupal\demo_search\Form\DemoSearchForm'
+    _title: 'DemoSearchForm'
+  requirements:
+    _access: 'TRUE'

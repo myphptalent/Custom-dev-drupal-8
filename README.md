@@ -5,3 +5,4 @@ batch_example
 tour_sample
 pass_js
 custom_drush_command
+demo_search

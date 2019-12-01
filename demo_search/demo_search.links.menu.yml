@@ -1,0 +1,5 @@
+demo_search.autosearch:
+  title: 'Autocomplete Search'
+  route_name: 'demo_search.user_controller_SearchUser'
+  menu_name: main
+  weight: 9
