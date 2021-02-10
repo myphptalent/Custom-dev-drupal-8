@@ -1,0 +1,5 @@
+name: 'Add ALT tag image'
+type: module
+description: 'Add the value of alt tag while adding or updating the node.'
+core: 8.x
+package: 'Custom'

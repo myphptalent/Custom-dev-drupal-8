@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Contains alt_img_update.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function alt_img_update_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the alt_img_update module.
+    case 'help.page.alt_img_update':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Add the alt tag while add/update any node.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+
+/**
+ * Implements hook_entity_presave().
+ *
+ * Before Drupal saves the entity, it will run this code.
+ */
+function alt_img_update_entity_presave(Drupal\Core\Entity\EntityInterface $entity) {
+  // We want to limit this to only people profile images.
+  if ($entity->bundle() == 'article') {
+
+    // Get the value array for our field so we can alter it.
+    $alt = $entity->get("field_image")->getValue();
+
+    // Replace the alt text to the title of this entity.
+    $alt[0]['alt'] = $entity->getTitle();
+
+    // Save the value array back to entity.
+    $entity->set('field_image', $alt);
+  }
+}
